@@ -68,4 +68,4 @@ Este projeto foi fundamental para consolidar conceitos como:
 
 Este aplicativo é um projeto educacional de portfólio.
 - **Inspiração Visual e Memes:** [QuartouOficial](https://www.instagram.com/quartouoficial/) (@quartouoficial).
-- **Conceito:** Baseado no meme clássico da internet *"It is Wednesday, my dudes"*.  pode fazer isso em ingles tbm
+- **Conceito:** Baseado no meme clássico da internet *"It is Wednesday, my dudes"*.

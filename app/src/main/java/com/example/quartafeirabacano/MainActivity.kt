@@ -12,11 +12,18 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    private val listaBacano = listOf(
+        Bacano("Pirata Bacano", R.drawable.bacanopirata),
+        Bacano("Bacano", R.drawable.bacanosim),
+        Bacano("Rayman Bacano", R.drawable.bacanojogo),
+        Bacano("Imperador Bacano", R.drawable.bacanojulio),
+        Bacano("Bacano do Posto", R.drawable.bacanoposto)
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
     val diaSemana = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
-    if(diaSemana == Calendar.THURSDAY) {
+    if(diaSemana == Calendar.WEDNESDAY) {
         setContentView(R.layout.activity_main)
     }else{
         setContentView(R.layout.activity_not_wednesday)
@@ -29,13 +36,6 @@ class MainActivity : AppCompatActivity() {
     }
     data class Bacano(val nome: String, val fotoId: Int)
 
-    val listaBacano = listOf(
-        Bacano("Pirata Bacano", R.drawable.bacanopirata),
-        Bacano("Bacano", R.drawable.bacanosim),
-        Bacano("Rayman Bacano", R.drawable.bacanojogo),
-        Bacano("Imperador Bacano", R.drawable.bacanojulio),
-        Bacano("Bacano do Posto", R.drawable.bacanoposto)
-    )
     var sorteouHoje = false
     fun sortear(view: View){
         if(sorteouHoje == false){
